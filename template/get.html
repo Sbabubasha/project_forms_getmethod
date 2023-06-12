@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       fieldset{
+        width: fit-content;
+        background-color: cornsilk;
+        border-radius: 40px;
+       }#cen:hover{
+        text-align: center;
+        border-radius: 50px;
+        width: 50px;
+        background-color: royalblue;
+       }button{
+        border-radius: 50px;
+        width: 70px;
+       }body{
+        background: linear-gradient(45deg,yellow,green ,red);
+        background-repeat: no-repeat;
+        height: 700px;
+       }input{
+        border-radius: 40px;
+       }
+    </style>
+</head>
+<body>
+    
+    <center>
+        <h1>this from is used to get method</h1>
+        <form action="" method="post">
+            {% csrf_token %}
+            <fieldset >
+                    <label for="user">username</label>
+                    <input type="text" name="user" placeholder="BABUBASHA">
+                        <br><br>
+                    <label for="pasword" >password</label>
+                    <input type="text" name="pw" placeholder="PASSWORD"><br><br>
+                
+                    <input type="submit" value="submit" id="cen">
+             
+        </fieldset>
+        </form>
+    </center>
+</body>
+</html>
